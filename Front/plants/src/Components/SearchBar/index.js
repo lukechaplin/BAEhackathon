@@ -1,12 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-function SearchBar() {
-  return (
-    <section>
-      <input></input>
-      <button></button>
-
-    </section>
-  )
-  }
+function SearchBar({ getWord }) {
+	return (
+		<form onSubmit={submitInfo}>
+			<input type="text" placeholder="Search for a plant..." onChange={getWord} />
+			<input type="submit" />
+		</form>
+	);
+}
 export default SearchBar;
