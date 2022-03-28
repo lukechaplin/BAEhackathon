@@ -17,3 +17,6 @@ router.get('/', async function (req, res) {
     payload: allPlants,
   });
 });
+
+
+export default router;
