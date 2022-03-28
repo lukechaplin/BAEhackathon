@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PlantsTile from '../PlantsTile';
 import SearchBar from '../SearchBar';
 
 function App() {
@@ -9,8 +10,11 @@ function App() {
 		setSearch(e.target.value);
 	}
 
-	async function submitInfo() {
-		const response = await fetch('');
+	async function submitInfo(e) {
+		e.preventDefault();
+
+		const response = await fetch(`http://localhost:3001/plants`);
+
 		const recievedData = await response.json();
 		setData(recievedData);
 	}
@@ -18,7 +22,9 @@ function App() {
 	return (
 		<div>
 			<h1>Save My Plants!</h1>
+
 			<SearchBar submitInfo={submitInfo} getWord={getWord} />
+			{data ? data.map((element) => <PlantsTile data={element} />) : <div />}
 		</div>
 	);
 }
