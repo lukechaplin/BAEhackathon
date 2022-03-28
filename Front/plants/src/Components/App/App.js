@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import PlantsTile from '../PlantsTile';
 import SearchBar from '../SearchBar';
+import css from "./App.module.css"
 
 function App() {
 	const [ search, setSearch ] = useState();
@@ -22,7 +23,7 @@ function App() {
 	}
 
 	return (
-		<div>
+		<div className={css.app}>
 			<h1>Save My Plants!</h1>
 
 			<SearchBar submitInfo={submitInfo} getWord={getWord} />

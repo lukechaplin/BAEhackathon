@@ -1,0 +1,17 @@
+
+.plantsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageContainer {
+  width: 70%;
+  min-height: 50%;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: auto;
+}
