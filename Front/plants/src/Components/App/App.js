@@ -13,10 +13,12 @@ function App() {
 	async function submitInfo(e) {
 		e.preventDefault();
 
-		const response = await fetch(`http://localhost:3001/plants`);
+		const response = await fetch(`http://localhost:3001/plants?name=${search}`);
 
-		const recievedData = await response.json();
-		setData(recievedData);
+		const receivedData = await response.json();
+		console.log('receivedData', receivedData);
+		setData(receivedData.payload);
+		console.log(data, 'data');
 	}
 
 	return (
