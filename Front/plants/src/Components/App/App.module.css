@@ -1,0 +1,10 @@
+.app {
+ text-align: center;
+ width : 100%;
+ height: auto;
+}
+
+.app h1 {
+  color: forestgreen;
+  text-align: center;
+} 

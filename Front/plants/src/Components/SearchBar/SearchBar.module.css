@@ -1,0 +1,13 @@
+.searchContainer {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.searchButton {
+  font-weight: bold;
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: forestgreen;
+  color: white;
+}
