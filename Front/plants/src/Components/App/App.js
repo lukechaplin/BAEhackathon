@@ -18,16 +18,14 @@ function App() {
 		const response = await fetch(`http://localhost:3001/plants?name=${search}`);
 
 		const receivedData = await response.json();
-		console.log('receivedData', receivedData);
 		setData(receivedData.payload);
-		console.log(data, 'data');
 	}
 
 	return (
 		<div className={css.app}>
 			<h1>Save My Plants!</h1>
 			<SearchBar submitInfo={submitInfo} getWord={getWord} />
-			{data ? data.map((element) => <div className={css.container}><PlantsTile data={element} /></div>) : <div />}
+			{data ? data.map((element) => <PlantsTile data={element} key={element.name} />) : <div />}
 			<Footer />
 		</div>
 	);
