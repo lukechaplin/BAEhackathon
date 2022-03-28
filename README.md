@@ -1,1 +1,1 @@
-# BAEhackaton
+# BAEhackathon
