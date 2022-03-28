@@ -26,9 +26,8 @@ function App() {
 	return (
 		<div className={css.app}>
 			<h1>Save My Plants!</h1>
-
 			<SearchBar submitInfo={submitInfo} getWord={getWord} />
-			{data ? data.map((element) => <PlantsTile data={element} />) : <div />}
+			{data ? data.map((element) => <div className={css.container}><PlantsTile data={element} /></div>) : <div />}
 			<Footer />
 		</div>
 	);

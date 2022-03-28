@@ -10,9 +10,9 @@ function PlantsTile({ data }) {
 
 			</div>
 
-			<p>Watering: {data.watering}</p>
-			<p>Sunlight: {data.sunlight}</p>
-			<p>Care Notes: {data.description}</p>
+			<p><span className={css.title}>Watering: </span>{data.watering}</p>
+			<p><span className={css.title}>Sunlight: </span>{data.sunlight}</p>
+			<p><span className={css.title}>Care Notes: </span>{data.description}</p>
 		</div>
 	);
 }

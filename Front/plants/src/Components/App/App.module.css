@@ -4,7 +4,12 @@
  height: auto;
 }
 
-.App h1 {
-  color: red;
+.container {
+  margin: auto;
+  width: 70%;
+}
+
+.app h1 {
+  color: forestgreen;
   text-align: center;
 } 

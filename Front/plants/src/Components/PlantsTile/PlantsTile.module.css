@@ -4,14 +4,30 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  border: 3px solid forestgreen;
+  border-radius: 1rem;
+  padding: 1rem;
 }
 
 .imageContainer {
   width: 70%;
   min-height: 50%;
+  
 }
 
 .imageContainer img {
   width: 100%;
   height: auto;
+  border-radius: 2rem;
+  border: 2px solid forestgreen;
+}
+
+.title {
+  color: forestgreen;
+  font-weight: 600;
+}
+
+h2 {
+  text-decoration: underline forestgreen;
 }
