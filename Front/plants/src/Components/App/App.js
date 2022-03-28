@@ -1,12 +1,11 @@
+import React from 'react';
 
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-
-    </div>
-  );
+function index() {
+	return (
+		<div>
+			<h1>Save My Plants!</h1>
+		</div>
+	);
 }
 
-export default App;
+export default index;
