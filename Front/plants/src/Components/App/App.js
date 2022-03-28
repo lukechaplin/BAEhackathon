@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import PlantsTile from '../PlantsTile';
 import SearchBar from '../SearchBar';
+import Footer from '../Footer'
 
 function App() {
 	const [ search, setSearch ] = useState();
@@ -27,6 +28,7 @@ function App() {
 
 			<SearchBar submitInfo={submitInfo} getWord={getWord} />
 			{data ? data.map((element) => <PlantsTile data={element} />) : <div />}
+			<Footer />
 		</div>
 	);
 }
